@@ -34,10 +34,18 @@
 		return false;
 	}
 	</script>
+ 
     <title>GBU | Information & Commnication Technology</title>
 </head>
 
 <body>
+  <style>
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #cc3636;
+    border-radius: 10px;
+}
+  </style>
 	<div class="header sticky-top">
 		<div class="global-header">
 			<div class="back-to-home justify-content-center">
@@ -320,823 +328,709 @@
     </div>
   </div>
   <!-- webpage data start from here -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="background-color: #78335d"
-    >
-      <button
-        class="navbar-toggler text-white"
-        type="button "
-        data-toggle="collapse"
-        data-bs-target="#navbarSupportedContent "
-        aria-controls="navbarSupportedContent "
-        aria-expanded="false "
-        aria-label="Toggle navigation "
-      >
-        &#9776;
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-        <div class="text-center mx-auto">
-          <ul
-            class="navbar-nav text-white container"
-            id="pills-tab "
-            role="tablist "
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link text-white active"
-                id="pills-home-tab "
-                data-toggle="pill "
-                href="#conferences "
-                role="tab "
-                aria-bs-controls="pills-home "
-                aria-selected="true "
-              >
-                Conferences</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                id="pills-profile-tab "
-                data-toggle="pill "
-                href="#expert-lectures "
-                role="tab "
-                aria-bs-controls="pills-profile "
-                aria-selected="false "
-                >Expert Lectures/Lectures Series</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                id="pills-contact-tab "
-                data-toggle="pill "
-                href="#fdp-sttp "
-                role="tab "
-                aria-bs-controls="pills-contact "
-                aria-selected="false "
-              >
-                FDP/STTP</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                id="pills-contact-tab "
-                data-toggle="pill "
-                href="#university-industry-round-table "
-                role="tab "
-                aria-controls="pills-contact "
-                aria-selected="false "
-                >University-Industry Research Round Tables</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                id="pills-contact-tab "
-                data-toggle="pill "
-                href="#seminars "
-                role="tab "
-                aria-controls="pills-contact "
-                aria-selected="false "
-              >
-                Seminar/Webinar</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                id="pills-contact-tab "
-                data-toggle="pill "
-                href="#workshops "
-                role="tab "
-                aria-controls="pills-contact "
-                aria-selected="false "
-              >
-                Workshops</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                id="pills-contact-tab "
-                data-toggle="pill "
-                href="#MoU "
-                role="tab "
-                aria-controls="pills-contact "
-                aria-selected="false "
-                >MoU</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="tab-content">
+  <div class="container mt-3">
+  <ul class="nav nav-pills mb-3 pillbg" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-conferences-tab" data-toggle="pill" href="#conferences" role="tab" aria-controls="pills-home" aria-selected="true">Conferences</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-expert-lacture-tab" data-toggle="pill" href="#pills-expert-lacture" role="tab" aria-controls="pills-expert-lacture" aria-selected="false">Expert Lectures/Lectures Series</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-fdp-tab" data-toggle="pill" href="#pills-fdp" role="tab" aria-controls="pills-fdp" aria-selected="false">FDP/STTP</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-uirrt-tab" data-toggle="pill" href="#pills-uirrt" role="tab" aria-controls="pills-uirrt" aria-selected="false">University-Industry Research Round Tables</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-seminar-tab" data-toggle="pill" href="#pills-seminar" role="tab" aria-controls="pills-seminar" aria-selected="false">Seminar/Webinar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-workshop-tab" data-toggle="pill" href="#pills-workshop" role="tab" aria-controls="pills-workshop" aria-selected="false">Workshops</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-mou-tab" data-toggle="pill" href="#pills-mou" role="tab" aria-controls="pills-mou" aria-selected="false">MoU</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- conferences tab start -->
+    <div class="tab-pane fade show active" id="conferences" role="tabpanel" aria-labelledby="pills-conferences-tab"><div class="container">
+      <h5 class="text-lg-left mt-3 mb-0">CONFERENCES | USICT</h5>
       <div
-        class="tab-pane fade show active"
-        id="conferences "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">CONFERENCES | USICT</h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                <b
-                  >Ist International Conference on Artificial Intelligence and
-                  Sustainable Computing for Smart Cities (AIS2C2: 2021) </b
-                >, Organised by Department of Computer Science and engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, U.P., India in
-                Collaboration with Technical Sciences, Jan Wyzykowski
-                University, Polkowice, Poland, Department of Automatic Control,
-                Computers &amp; Electronics Department, Petroleum-Gas University
-                of Ploiesti, Bucuresti Blvd., Ploesti, Romania, Department of
-                Informatics, University of Economics Varna, Bulgaria, Faculty of
-                Technology, WSG University Bydgoszcz, Poland and School of
-                Engineering Technology, Federal Polytechnic, Oko, Anambra State,
-                Nigeria, from March 22nd - 23rd, 2021.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Two Days 1st Online International Conference on Rebuilding
-                  Bharat with Artificial Intelligence (AI) Interventions after
-                  COVID-19 Pandemic: Opportunity and Challenges</b
-                >
-                organised by Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, U.P., India from May
-                02-03, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >International Conference on 2012 Emerging Paradigms and
-                  Practices in Information & Communication Technology and
-                  Management (2012 EPPICTM)</b
-                >
-                at the University School of Information and Communication
-                Technology, Gautam Buddha University, Greater Noida, U.P., India
-                in collaboration with MTMI, USA, University of Maryland Eastern
-                Shore, USA and Frostburg State University, USA. 26th - 28th Jul,
-                2012.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >1st International Conference on Innovations and Advancements
-                  in Information and Communication Technology, 2012 (ICIAICT
-                  2012)</b
-                >, jointly organized by University School of Information and
-                Communication Technology, Gautam Buddha University, Greater
-                Noida, U.P., India and Computer Society of India NOIDA Chapter,
-                Noida, U.P., India, from 30th - 31st Mar, 2012.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >COMMUNE Conference on Advancements in Communication,
-                  Computing & Signal Processing-2011 (COMMUNE CACCS, 2011)</b
-                >, jointly organize by COMMUNE and University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater Noida, U.P., India from 16th - 17th Apr,
-                2011.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="expert-lectures "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">
-            EXPERT LECTURES / EXPERT LECTURES SERIES | USICT
-          </h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                <b>Two Weeks Expert Lecture Series on Research Trends in ICT</b>
-                organized by University School of Information and Communication
-                technology, 29th June to 9th July 2020 at School of Information
-                and Communication technology, GBU, Greater Noida, U.P., India.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>One Week Online Lecture Series Cognitive Computing</b>
-                organized by the Cognitive Computing Study Circle, Department of
-                Computer Science and Engineering, University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater Noida, UP, INDIA from June 12th-16th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Mr. Aditya Kumar </b> (2020) data Scientist from KPMG Global
-                Services, Gurguram, Haryana delivered an Expert Lecture on
-                <b>NIP Techniques for Information Extraction</b> on April 25,
-                2020, and organized by the University School of Information and
-                Communication Technology, Gautam Buddha University, Greater
-                Noida, UP, India.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Dr. Aman Kumar Jha</b> (2020) from ST Microelectronics,
-                Greater Noida, delivered an Expert Lecture on
-                <b>Smart Energy System for LED Lighting Applications</b> on
-                March 03, 2020, and organized by the University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater Noida, UP, India.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Mr. Jaspreet Singh</b> (2020) from IPcurate Lab - Verispire
-                Inc. delivered an Expert Lecture on
-                <b>Intellectual Property Right</b> on Feb. 25, 2020, and
-                organized by the University School of Information and
-                Communication Technology, Gautam Buddha University, Greater
-                Noida, UP, India.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Mr. Vinay Bamil</b> (2020) Head of Technology Strategy and
-                Acrhitect, Google Cloud at Google Mountain View, USA delivered
-                an Expert Lecture on
-                <b
-                  >How to Prepare for Latest upcoming Job Opportunities in IT
-                  Industry</b
-                >
-                on Feb, 06, 2020, and organized by the University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater NOIDA, UP, India.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Dr. Anand Nayar</b> (2020) Researcher and Scientist, Graduate
-                School, Duy Tan University, Da Nang, Vietnam delivered Expert
-                Lecture on
-                <b
-                  >Futuristic Artificial Intelligence Direction towards the
-                  Internet of Vehicles and Cyber Security</b
-                >
-                on Jan. 28, 2020, and organized by the University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater Noida,UP, India.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Dr. Ankur Singh Bist</b> (2020) Chief AI Scientist, Towards
-                Blockchain, Gurugram delivered an Expert Lecture on
-                <b
-                  >Industrial Applications of Artificial Intelligence and
-                  Machine Learning</b
-                >
-                on Nov. 18, 2019, and organized by the University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater NOIDA, UP, India.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="fdp-sttp "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">
-            FUCULTY DEVELOPMENT PROGRAMMES/SHORT TERM TRAINING PROGRAMMES |
-            USICT
-          </h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <h6 class="text-lg-left mt-4 mb-0">
-            <b>FACULTY DEVELOPMENT PROGRAMMES</b>
-          </h6>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 4%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week AICTE sponsored ATAL FDP on Cyber Security and
-                  Forensics</b
-                >
-                organized by the Department of Computer Science and Engineering
-                & Department of Electronics and Communication Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, U.P., INDIA from
-                October 03th - 07th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Faculty Development Programme on Big Data
-                  Analytics</b
-                >
-                organized by the University School of Engineering and University
-                School of Information and Communication Technology, Gautam
-                Buddha University, Greater NOIDA, UP, India from 04th - 09th
-                Feb, 2019.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Faculty Development Programme on Recent Trends of
-                  Soft Computing Techniques in Software Engineering and
-                  Applications</b
-                >
-                in collaboration with Spoken Tutorials (IIT Bombay), Computer
-                Society of India NOIDA Chapter and IEEE GBU Chapter and
-                organized by the University School of Information and
-                Communication Technology, Gautam Buddha University, Greater
-                NOIDA, UP, INDIA 19th - 24th Dec, 2016.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Faculty Development Programme on Recent Advancements
-                  in Software Engineering and Network Technologies</b
-                >, organized by USICT, Gautam Buddha University, Greater NOIDA,
-                U.P., INDIA in collaboration with CSI, Chapter NOIDA, NOIDA, UP,
-                India, 11th - 15th Jun, 2012.
-              </p>
-            </li>
-          </ul>
-          <h6 class="text-lg-left mt-4 mb-0">
-            <b>SHORT TERM TRAINING PROGRAMMES</b>
-          </h6>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                <b
-                  >Two Week Online Short Term Training Programme in Research
-                  Methodology</b
-                >
-                organized by the Department of Computer Science and Engineering
-                & Department of Electronics and Communication Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, U.P., INDIA from July
-                06th - 18th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Short Term Course on Machine Learning and its
-                  Applications</b
-                >
-                conducted by University School of Information and Communication
-                Technology, Gautam Buddha University, Greater NOIDA, UP, India
-                and sponsored by DRDO in collaboration with Computer Society of
-                India (NOIDA Chapter) and IEEE- GBU Chapter from 2nd to 7th Feb,
-                2019.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Short Term Course on Data Science using R through
-                  ICT</b
-                >
-                conducted by University School of Information and Communication
-                Technology, Gautam Buddha University, Greater NOIDA, UP, India
-                and organized by the National Institute of Technical Teachers
-                Training and Research, Chandigarh from 26th - 30th Nov, 2018.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Short Term Training Program on Application of
-                  Techniques / Tools in Engineering</b
-                >
-                in technical collaboration with Soft Computing Research Society,
-                IEEE Power and Energy Society, IEEE Power Electronics, and
-                Institute of Civil Engineering and organized by the School of
-                Engineering and School of Vocational Studies & Applied Sciences,
-                Gautam Buddha University, Greater Noida, UP, India from 9th -
-                14th October, 2017.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Week Short Term Training Program on Research Techniques
-                  in Information and Communication Technology (RTICT’17)</b
-                >, CSIR sponsored and in collaboration with Spoken Tutorials
-                (IIT Bombay), Computer Society of India at School of ICT, Gautam
-                Buddha University, Greater NOIDA, 30th Jan - 4th Feb, 2017.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="university-industry-round-table "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">
-            UNIVERSITY INDUSTRY RESEARCH ROUND TABLES | USICT
-          </h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <b>One Day University-Industry Research Roundtable</b> organized
-              by the University School of Information and Communication
-              Technology, Gautam Buddha University, Greater NOIDA, UP, India on
-              14th Nov, 2018.
-            </li>
-            <br />
-          </ul>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="seminars "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">SEMINARS/WEBINARS | USICT</h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Reliability Availability Maintainability & Safety
-                  (RAMS) and Prognostics Health Management (PHM)</b
-                >
-                organised by University School of Information and Communication
-                Technology, Gautam Buddha University, Greater NOIDA,UP, India on
-                25 June 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Webinar on Data Science and Machine Learning using Python</b>
-                organized by the Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA UP, INDIA in
-                collaboration with Mapping Skill, Greater Noida on June 10th,
-                2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Webinar on Artificial Intelligence using Python</b> organized
-                by the Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA, UP, INDIA in
-                collaboration with Mapping Skill, Greater Noida on June 09th,
-                2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Environmental Impacts of Covid-19 Lockdown and
-                  Strategies to Sustain in Future</b
-                >
-                organized by Department of Environmental Science in
-                collaboration with the Department of Computer Science and
-                Engineering, University School of Information and Communication
-                Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
-                on June 08th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Post COVID-19 : Towards Better Governance For
-                  Environmental Management and Biodiversity Conservation
-                  organized</b
-                >
-                by Center for Environmental Law Management and Research and
-                Department of Environmental Science in collaboration with the
-                Department of Computer Science and Engineering, University
-                School of Information and Communication Technology, Gautam
-                Buddha University, Greater NOIDA, UP, INDIA on June 04th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Water-Sampling Using Unmanned Autonomous Guided
-                  Vehicle</b
-                >
-                Organised by Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA, UP, INDIA on 31 May
-                2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Blockchain Technology for New Era of Higher
-                  Education</b
-                >
-                organized by the Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA, UP, INDIA on May 14th,
-                2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Covid-19 Disruption to Infiltrate Organizations
-                  Networks - No Mercy from Cyber Hackers</b
-                >
-                Organised by Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA, UP, INDIA on May 12th,
-                2020
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Webinar on Artificial Intelligence and Deep Learning</b>
-                organized by the Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA, UP, INDIA in
-                collaboration with Mapping Skill, Greater Noida on April 22nd,
-                2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on The Liability of China for Corona under
-                  International Laws</b
-                >
-                organized Gautam Buddha University in collaboration with
-                Department of Computer Science and Engineering, University
-                School of Information and Communication Technology, Gautam
-                Buddha University, Greater NOIDA, UP, INDIA on April 18th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Environmental and Dietary Norms for Preventive
-                  Immunity for Corona</b
-                >
-                organized School of Vocational Studies and Applied Sciences,
-                Gautam Buddha University in collaboration with Department of
-                Computer Science and Engineering, University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater NOIDA, UP, INDIA on April 16th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Webinar on Post Corona: Nation Building</b> organized Gautam
-                Buddha University in collaboration with Department of Computer
-                Science and Engineering, University School of Information and
-                Communication Technology, Gautam Buddha University, Greater
-                NOIDA, UP, INDIA on April 15th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on The Liability of China for Corona under
-                  International Laws</b
-                >
-                organized Gautam Buddha University in collaboration with
-                Department of Computer Science and Engineering, University
-                School of Information and Communication Technology, Gautam
-                Buddha University, Greater NOIDA, UP, INDIA on April 15th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Webinar on Online Teaching, Evaluation and Admin Options
-                  under Lockdown and Their Efficacy</b
-                >
-                organized by the Department of Computer Science and Engineering,
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater NOIDA, UP, INDIA on April
-                14th, 2020.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >One Day Idea Generation “National Seminar on Rapid and
-                  Alternative Energy Mobility” (RAEM-2019)</b
-                >
-                organised by University School of Information and Communication
-                Technology, Gautam Buddha University, Greater NOIDA,UP, India on
-                24th Jan, 2019.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="workshops "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">WORKSHOP | USICT</h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                <b>One Week Workshop on Cutting Edge Technologies of ICT</b>
-                organized by the University School of Information and
-                Communication Technology, Gautam Buddha University, Greater
-                NOIDA, UP, INDIA from 24th to 28th Sept,2016.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b
-                  >Workshop on Impact of Information Technology in Indian
-                  Society</b
-                >, University School of Information and Communication Tech.,
-                Gautam Buddha University, Greater NOIDA, UP, India, 22nd Mar,
-                2011.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                <b>Workshop on Open Educational Resources and WikiEducator</b>,
-                organised by University School of Information and Communication
-                Technology, Gautam Buddha University, Greater NOIDA, Uttar
-                Pradesh, India sponsored by Commonwealth Educational Media
-                Centre for Asia, New Delhi, India, 9th - 11th Jun, 2010.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="MoU "
-        role="tabpanel "
-        aria-labelledby="pills-home-tab "
-      >
-        <div class="container">
-          <h5 class="text-lg-left mt-3 mb-0">
-            MEMORANDUM OF UNDERSTANDING | USICT
-          </h5>
-          <div
-            class="mb-3 mt-2 float-left"
-            style="height: 5px; width: 7%; background-color: #fb8c00"
-          ></div>
-          <br />
-          <br />
-          <ul type="circle ">
-            <li>
-              <p class="text-justify">
-                MoU signed by
-                <b>Gautam Buddha University, Greater Noida</b> with
-                <b
-                  >Broadcast Engineering Consultants India Limited (BECIL), New
-                  Delhi</b
-                >
-                on March 15th, 2021 for Skill Development, Outcome Based
-                Training, Business Proposals, Joint Research Scientific Projects
-                and Related Services in areas of Cyber Securities, Artificial
-                Intelligence & other ICT domain and process initiated by the
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, UP.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                MoU signed by
-                <b>Gautam Buddha University, Greater Noida</b> with
-                <b
-                  >Telecommunications Consultants India Ltd. (TCIL), New
-                  Delhi</b
-                >
-                on May 15th, 2020 for Skill Development, Outcome Based Training,
-                Business Proposals, Joint Research Scientific Projects and
-                Related Services in areas of Cyber Securities, Artificial
-                Intelligence & other ICT domain and process initiated by the
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, UP.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                MoU signed by
-                <b>Gautam Buddha University, Greater Noida</b> with
-                <b>Signy Advanced Technologies, Gurugram, Haryana</b> on Feb.
-                14th, 2020 for Skill Development, Outcome Based Training,
-                Business Proposals, Joint Research Scientific Projects and
-                Related Services in areas of Artificial Intelligence and other
-                ICT domain and process initiated by the University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater Noida, UP.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                MoU signed by
-                <b>Gautam Buddha University, Greater Noida</b> with
-                <b>Noida Metro Rail Corporation Limited (NMRC), New Delhi</b> on
-                September 18th, 2019 for Skill Development, Outcome Based
-                Training, Joint Research Scientific Projects and Related
-                Services in areas of Railway Signaling, Telecommunication and
-                RAMS and other ICT domain and process initiated by the
-                University School of Information and Communication Technology,
-                Gautam Buddha University, Greater Noida, UP.
-              </p>
-            </li>
-            <li>
-              <p class="text-justify">
-                MoU signed by
-                <b>Gautam Buddha University, Greater Noida</b> with
-                <b
-                  >National Institute of Electronics &amp; Information
-                  Technology, New Delhi</b
-                >
-                on March 12th, 2019 for Skill Development, Outcome Based
-                Training, with one course of Advanced Certificate Course in Big
-                Data Analytics and process initiated by the University School of
-                Information and Communication Technology, Gautam Buddha
-                University, Greater Noida, UP.
-              </p>
-            </li>
-          </ul>
-        </div>
+        class="mb-3 mt-2 float-left"
+        style="height: 5px; width: 7%; background-color: #fb8c00"
+      ></div>
+      <br />
+      <br />
+      <ul type="circle ">
+        <li>
+          <p class="text-justify">
+            <b
+              >Ist International Conference on Artificial Intelligence and
+              Sustainable Computing for Smart Cities (AIS2C2: 2021) </b
+            >, Organised by Department of Computer Science and engineering,
+            University School of Information and Communication Technology,
+            Gautam Buddha University, Greater Noida, U.P., India in
+            Collaboration with Technical Sciences, Jan Wyzykowski
+            University, Polkowice, Poland, Department of Automatic Control,
+            Computers &amp; Electronics Department, Petroleum-Gas University
+            of Ploiesti, Bucuresti Blvd., Ploesti, Romania, Department of
+            Informatics, University of Economics Varna, Bulgaria, Faculty of
+            Technology, WSG University Bydgoszcz, Poland and School of
+            Engineering Technology, Federal Polytechnic, Oko, Anambra State,
+            Nigeria, from March 22nd - 23rd, 2021.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >Two Days 1st Online International Conference on Rebuilding
+              Bharat with Artificial Intelligence (AI) Interventions after
+              COVID-19 Pandemic: Opportunity and Challenges</b
+            >
+            organised by Department of Computer Science and Engineering,
+            University School of Information and Communication Technology,
+            Gautam Buddha University, Greater Noida, U.P., India from May
+            02-03, 2020.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >International Conference on 2012 Emerging Paradigms and
+              Practices in Information & Communication Technology and
+              Management (2012 EPPICTM)</b
+            >
+            at the University School of Information and Communication
+            Technology, Gautam Buddha University, Greater Noida, U.P., India
+            in collaboration with MTMI, USA, University of Maryland Eastern
+            Shore, USA and Frostburg State University, USA. 26th - 28th Jul,
+            2012.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >1st International Conference on Innovations and Advancements
+              in Information and Communication Technology, 2012 (ICIAICT
+              2012)</b
+            >, jointly organized by University School of Information and
+            Communication Technology, Gautam Buddha University, Greater
+            Noida, U.P., India and Computer Society of India NOIDA Chapter,
+            Noida, U.P., India, from 30th - 31st Mar, 2012.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >COMMUNE Conference on Advancements in Communication,
+              Computing & Signal Processing-2011 (COMMUNE CACCS, 2011)</b
+            >, jointly organize by COMMUNE and University School of
+            Information and Communication Technology, Gautam Buddha
+            University, Greater Noida, U.P., India from 16th - 17th Apr,
+            2011.
+          </p>
+        </li>
+      </ul>
+    </div></div>
+ <!-- conferences tab end -->
+ <!-- tab 2 start -->
+    <div class="tab-pane fade" id="pills-expert-lacture" role="tabpanel" aria-labelledby="pills-expert-lacture-tab">
+      <div class="container">
+        <h5 class="text-lg-left mt-3 mb-0">
+          EXPERT LECTURES / EXPERT LECTURES SERIES | USICT
+        </h5>
+        <div
+          class="mb-3 mt-2 float-left"
+          style="height: 5px; width: 7%; background-color: #fb8c00"
+        ></div>
+        <br />
+        <br />
+        <ul type="circle ">
+          <li>
+            <p class="text-justify">
+              <b>Two Weeks Expert Lecture Series on Research Trends in ICT</b>
+              organized by University School of Information and Communication
+              technology, 29th June to 9th July 2020 at School of Information
+              and Communication technology, GBU, Greater Noida, U.P., India.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>One Week Online Lecture Series Cognitive Computing</b>
+              organized by the Cognitive Computing Study Circle, Department of
+              Computer Science and Engineering, University School of
+              Information and Communication Technology, Gautam Buddha
+              University, Greater Noida, UP, INDIA from June 12th-16th, 2020.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>Mr. Aditya Kumar </b> (2020) data Scientist from KPMG Global
+              Services, Gurguram, Haryana delivered an Expert Lecture on
+              <b>NIP Techniques for Information Extraction</b> on April 25,
+              2020, and organized by the University School of Information and
+              Communication Technology, Gautam Buddha University, Greater
+              Noida, UP, India.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>Dr. Aman Kumar Jha</b> (2020) from ST Microelectronics,
+              Greater Noida, delivered an Expert Lecture on
+              <b>Smart Energy System for LED Lighting Applications</b> on
+              March 03, 2020, and organized by the University School of
+              Information and Communication Technology, Gautam Buddha
+              University, Greater Noida, UP, India.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>Mr. Jaspreet Singh</b> (2020) from IPcurate Lab - Verispire
+              Inc. delivered an Expert Lecture on
+              <b>Intellectual Property Right</b> on Feb. 25, 2020, and
+              organized by the University School of Information and
+              Communication Technology, Gautam Buddha University, Greater
+              Noida, UP, India.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>Mr. Vinay Bamil</b> (2020) Head of Technology Strategy and
+              Acrhitect, Google Cloud at Google Mountain View, USA delivered
+              an Expert Lecture on
+              <b
+                >How to Prepare for Latest upcoming Job Opportunities in IT
+                Industry</b
+              >
+              on Feb, 06, 2020, and organized by the University School of
+              Information and Communication Technology, Gautam Buddha
+              University, Greater NOIDA, UP, India.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>Dr. Anand Nayar</b> (2020) Researcher and Scientist, Graduate
+              School, Duy Tan University, Da Nang, Vietnam delivered Expert
+              Lecture on
+              <b
+                >Futuristic Artificial Intelligence Direction towards the
+                Internet of Vehicles and Cyber Security</b
+              >
+              on Jan. 28, 2020, and organized by the University School of
+              Information and Communication Technology, Gautam Buddha
+              University, Greater Noida,UP, India.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b>Dr. Ankur Singh Bist</b> (2020) Chief AI Scientist, Towards
+              Blockchain, Gurugram delivered an Expert Lecture on
+              <b
+                >Industrial Applications of Artificial Intelligence and
+                Machine Learning</b
+              >
+              on Nov. 18, 2019, and organized by the University School of
+              Information and Communication Technology, Gautam Buddha
+              University, Greater NOIDA, UP, India.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
+    <!-- tab 2 end -->
+    <!-- tab 3 start -->
+    <div class="tab-pane fade" id="pills-fdp" role="tabpanel" aria-labelledby="pills-fdp-tab">
+      <div class="container">
+        <h5 class="text-lg-left mt-3 mb-0">
+          FUCULTY DEVELOPMENT PROGRAMMES/SHORT TERM TRAINING PROGRAMMES |
+          USICT
+        </h5>
+        <div
+          class="mb-3 mt-2 float-left"
+          style="height: 5px; width: 7%; background-color: #fb8c00"
+        ></div>
+        <br />
+        <h6 class="text-lg-left mt-4 mb-0">
+          <b>FACULTY DEVELOPMENT PROGRAMMES</b>
+        </h6>
+        <div
+          class="mb-3 mt-2 float-left"
+          style="height: 5px; width: 4%; background-color: #fb8c00"
+        ></div>
+        <br />
+        <br />
+        <ul type="circle ">
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week AICTE sponsored ATAL FDP on Cyber Security and
+                Forensics</b
+              >
+              organized by the Department of Computer Science and Engineering
+              & Department of Electronics and Communication Engineering,
+              University School of Information and Communication Technology,
+              Gautam Buddha University, Greater Noida, U.P., INDIA from
+              October 03th - 07th, 2020.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Faculty Development Programme on Big Data
+                Analytics</b
+              >
+              organized by the University School of Engineering and University
+              School of Information and Communication Technology, Gautam
+              Buddha University, Greater NOIDA, UP, India from 04th - 09th
+              Feb, 2019.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Faculty Development Programme on Recent Trends of
+                Soft Computing Techniques in Software Engineering and
+                Applications</b
+              >
+              in collaboration with Spoken Tutorials (IIT Bombay), Computer
+              Society of India NOIDA Chapter and IEEE GBU Chapter and
+              organized by the University School of Information and
+              Communication Technology, Gautam Buddha University, Greater
+              NOIDA, UP, INDIA 19th - 24th Dec, 2016.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Faculty Development Programme on Recent Advancements
+                in Software Engineering and Network Technologies</b
+              >, organized by USICT, Gautam Buddha University, Greater NOIDA,
+              U.P., INDIA in collaboration with CSI, Chapter NOIDA, NOIDA, UP,
+              India, 11th - 15th Jun, 2012.
+            </p>
+          </li>
+        </ul>
+        <h6 class="text-lg-left mt-4 mb-0">
+          <b>SHORT TERM TRAINING PROGRAMMES</b>
+        </h6>
+        <div
+          class="mb-3 mt-2 float-left"
+          style="height: 5px; width: 7%; background-color: #fb8c00"
+        ></div>
+        <br />
+        <br />
+        <ul type="circle ">
+          <li>
+            <p class="text-justify">
+              <b
+                >Two Week Online Short Term Training Programme in Research
+                Methodology</b
+              >
+              organized by the Department of Computer Science and Engineering
+              & Department of Electronics and Communication Engineering,
+              University School of Information and Communication Technology,
+              Gautam Buddha University, Greater Noida, U.P., INDIA from July
+              06th - 18th, 2020.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Short Term Course on Machine Learning and its
+                Applications</b
+              >
+              conducted by University School of Information and Communication
+              Technology, Gautam Buddha University, Greater NOIDA, UP, India
+              and sponsored by DRDO in collaboration with Computer Society of
+              India (NOIDA Chapter) and IEEE- GBU Chapter from 2nd to 7th Feb,
+              2019.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Short Term Course on Data Science using R through
+                ICT</b
+              >
+              conducted by University School of Information and Communication
+              Technology, Gautam Buddha University, Greater NOIDA, UP, India
+              and organized by the National Institute of Technical Teachers
+              Training and Research, Chandigarh from 26th - 30th Nov, 2018.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Short Term Training Program on Application of
+                Techniques / Tools in Engineering</b
+              >
+              in technical collaboration with Soft Computing Research Society,
+              IEEE Power and Energy Society, IEEE Power Electronics, and
+              Institute of Civil Engineering and organized by the School of
+              Engineering and School of Vocational Studies & Applied Sciences,
+              Gautam Buddha University, Greater Noida, UP, India from 9th -
+              14th October, 2017.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify">
+              <b
+                >One Week Short Term Training Program on Research Techniques
+                in Information and Communication Technology (RTICT’17)</b
+              >, CSIR sponsored and in collaboration with Spoken Tutorials
+              (IIT Bombay), Computer Society of India at School of ICT, Gautam
+              Buddha University, Greater NOIDA, 30th Jan - 4th Feb, 2017.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!-- tab 3 end -->
+  <!-- tab 4 start -->
+  <div class="tab-pane fade" id="pills-uirrt" role="tabpanel" aria-labelledby="pills-uirrt-tab">
+    <div class="container">
+    <h5 class="text-lg-left mt-3 mb-0">
+      UNIVERSITY INDUSTRY RESEARCH ROUND TABLES | USICT
+    </h5>
+    <div
+      class="mb-3 mt-2 float-left"
+      style="height: 5px; width: 7%; background-color: #fb8c00"
+    ></div>
+    <br />
+    <br />
+    <ul type="circle ">
+      <li>
+        <b>One Day University-Industry Research Roundtable</b> organized
+        by the University School of Information and Communication
+        Technology, Gautam Buddha University, Greater NOIDA, UP, India on
+        14th Nov, 2018.
+      </li>
+      <br />
+    </ul>
+  </div></div>
+<!-- tab 4 end -->
+<!-- tab 5 start -->
+<div class="tab-pane fade" id="pills-seminar" role="tabpanel" aria-labelledby="pills-seminar-tab">
+  <div class="container">
+    <h5 class="text-lg-left mt-3 mb-0">SEMINARS/WEBINARS | USICT</h5>
+    <div
+      class="mb-3 mt-2 float-left"
+      style="height: 5px; width: 7%; background-color: #fb8c00"
+    ></div>
+    <br />
+    <br />
+    <ul type="circle ">
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Reliability Availability Maintainability & Safety
+            (RAMS) and Prognostics Health Management (PHM)</b
+          >
+          organised by University School of Information and Communication
+          Technology, Gautam Buddha University, Greater NOIDA,UP, India on
+          25 June 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b>Webinar on Data Science and Machine Learning using Python</b>
+          organized by the Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA UP, INDIA in
+          collaboration with Mapping Skill, Greater Noida on June 10th,
+          2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b>Webinar on Artificial Intelligence using Python</b> organized
+          by the Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA, UP, INDIA in
+          collaboration with Mapping Skill, Greater Noida on June 09th,
+          2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Environmental Impacts of Covid-19 Lockdown and
+            Strategies to Sustain in Future</b
+          >
+          organized by Department of Environmental Science in
+          collaboration with the Department of Computer Science and
+          Engineering, University School of Information and Communication
+          Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
+          on June 08th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Post COVID-19 : Towards Better Governance For
+            Environmental Management and Biodiversity Conservation
+            organized</b
+          >
+          by Center for Environmental Law Management and Research and
+          Department of Environmental Science in collaboration with the
+          Department of Computer Science and Engineering, University
+          School of Information and Communication Technology, Gautam
+          Buddha University, Greater NOIDA, UP, INDIA on June 04th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Water-Sampling Using Unmanned Autonomous Guided
+            Vehicle</b
+          >
+          Organised by Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA, UP, INDIA on 31 May
+          2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Blockchain Technology for New Era of Higher
+            Education</b
+          >
+          organized by the Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA, UP, INDIA on May 14th,
+          2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Covid-19 Disruption to Infiltrate Organizations
+            Networks - No Mercy from Cyber Hackers</b
+          >
+          Organised by Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA, UP, INDIA on May 12th,
+          2020
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b>Webinar on Artificial Intelligence and Deep Learning</b>
+          organized by the Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA, UP, INDIA in
+          collaboration with Mapping Skill, Greater Noida on April 22nd,
+          2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on The Liability of China for Corona under
+            International Laws</b
+          >
+          organized Gautam Buddha University in collaboration with
+          Department of Computer Science and Engineering, University
+          School of Information and Communication Technology, Gautam
+          Buddha University, Greater NOIDA, UP, INDIA on April 18th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Environmental and Dietary Norms for Preventive
+            Immunity for Corona</b
+          >
+          organized School of Vocational Studies and Applied Sciences,
+          Gautam Buddha University in collaboration with Department of
+          Computer Science and Engineering, University School of
+          Information and Communication Technology, Gautam Buddha
+          University, Greater NOIDA, UP, INDIA on April 16th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b>Webinar on Post Corona: Nation Building</b> organized Gautam
+          Buddha University in collaboration with Department of Computer
+          Science and Engineering, University School of Information and
+          Communication Technology, Gautam Buddha University, Greater
+          NOIDA, UP, INDIA on April 15th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on The Liability of China for Corona under
+            International Laws</b
+          >
+          organized Gautam Buddha University in collaboration with
+          Department of Computer Science and Engineering, University
+          School of Information and Communication Technology, Gautam
+          Buddha University, Greater NOIDA, UP, INDIA on April 15th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Webinar on Online Teaching, Evaluation and Admin Options
+            under Lockdown and Their Efficacy</b
+          >
+          organized by the Department of Computer Science and Engineering,
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater NOIDA, UP, INDIA on April
+          14th, 2020.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >One Day Idea Generation “National Seminar on Rapid and
+            Alternative Energy Mobility” (RAEM-2019)</b
+          >
+          organised by University School of Information and Communication
+          Technology, Gautam Buddha University, Greater NOIDA,UP, India on
+          24th Jan, 2019.
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- tab 5 end -->
+<!-- tab 6 start -->
+<div class="tab-pane fade" id="pills-workshop" role="tabpanel" aria-labelledby="pills-workshop-tab">
+  <div class="container">
+    <h5 class="text-lg-left mt-3 mb-0">WORKSHOP | USICT</h5>
+    <div
+      class="mb-3 mt-2 float-left"
+      style="height: 5px; width: 7%; background-color: #fb8c00"
+    ></div>
+    <br />
+    <br />
+    <ul type="circle ">
+      <li>
+        <p class="text-justify">
+          <b>One Week Workshop on Cutting Edge Technologies of ICT</b>
+          organized by the University School of Information and
+          Communication Technology, Gautam Buddha University, Greater
+          NOIDA, UP, INDIA from 24th to 28th Sept,2016.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b
+            >Workshop on Impact of Information Technology in Indian
+            Society</b
+          >, University School of Information and Communication Tech.,
+          Gautam Buddha University, Greater NOIDA, UP, India, 22nd Mar,
+          2011.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          <b>Workshop on Open Educational Resources and WikiEducator</b>,
+          organised by University School of Information and Communication
+          Technology, Gautam Buddha University, Greater NOIDA, Uttar
+          Pradesh, India sponsored by Commonwealth Educational Media
+          Centre for Asia, New Delhi, India, 9th - 11th Jun, 2010.
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- tab 6 end -->
+<!-- tab 7 start -->
+<div class="tab-pane fade" id="pills-mou" role="tabpanel" aria-labelledby="pills-mou-tab">
+  <div class="container">
+    <h5 class="text-lg-left mt-3 mb-0">
+      MEMORANDUM OF UNDERSTANDING | USICT
+    </h5>
+    <div
+      class="mb-3 mt-2 float-left"
+      style="height: 5px; width: 7%; background-color: #fb8c00"
+    ></div>
+    <br />
+    <br />
+    <ul type="circle ">
+      <li>
+        <p class="text-justify">
+          MoU signed by
+          <b>Gautam Buddha University, Greater Noida</b> with
+          <b
+            >Broadcast Engineering Consultants India Limited (BECIL), New
+            Delhi</b
+          >
+          on March 15th, 2021 for Skill Development, Outcome Based
+          Training, Business Proposals, Joint Research Scientific Projects
+          and Related Services in areas of Cyber Securities, Artificial
+          Intelligence & other ICT domain and process initiated by the
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater Noida, UP.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          MoU signed by
+          <b>Gautam Buddha University, Greater Noida</b> with
+          <b
+            >Telecommunications Consultants India Ltd. (TCIL), New
+            Delhi</b
+          >
+          on May 15th, 2020 for Skill Development, Outcome Based Training,
+          Business Proposals, Joint Research Scientific Projects and
+          Related Services in areas of Cyber Securities, Artificial
+          Intelligence & other ICT domain and process initiated by the
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater Noida, UP.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          MoU signed by
+          <b>Gautam Buddha University, Greater Noida</b> with
+          <b>Signy Advanced Technologies, Gurugram, Haryana</b> on Feb.
+          14th, 2020 for Skill Development, Outcome Based Training,
+          Business Proposals, Joint Research Scientific Projects and
+          Related Services in areas of Artificial Intelligence and other
+          ICT domain and process initiated by the University School of
+          Information and Communication Technology, Gautam Buddha
+          University, Greater Noida, UP.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          MoU signed by
+          <b>Gautam Buddha University, Greater Noida</b> with
+          <b>Noida Metro Rail Corporation Limited (NMRC), New Delhi</b> on
+          September 18th, 2019 for Skill Development, Outcome Based
+          Training, Joint Research Scientific Projects and Related
+          Services in areas of Railway Signaling, Telecommunication and
+          RAMS and other ICT domain and process initiated by the
+          University School of Information and Communication Technology,
+          Gautam Buddha University, Greater Noida, UP.
+        </p>
+      </li>
+      <li>
+        <p class="text-justify">
+          MoU signed by
+          <b>Gautam Buddha University, Greater Noida</b> with
+          <b
+            >National Institute of Electronics &amp; Information
+            Technology, New Delhi</b
+          >
+          on March 12th, 2019 for Skill Development, Outcome Based
+          Training, with one course of Advanced Certificate Course in Big
+          Data Analytics and process initiated by the University School of
+          Information and Communication Technology, Gautam Buddha
+          University, Greater Noida, UP.
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- tab 7 end -->
+</div>
   <!-- webpage data end here -->
   <div class="gcse-searchresults-only"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

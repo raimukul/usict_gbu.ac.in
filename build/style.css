@@ -410,3 +410,10 @@ p{
                       background-color: #fb8c00!important;
                       border-color: #fb8c00!important;
                   }
+                  .imgc{
+                    height: 62vh;
+                  }
+                  .pillbg{
+                    background-color: #c6d9e7;
+                    border-radius: 10px;
+                  }

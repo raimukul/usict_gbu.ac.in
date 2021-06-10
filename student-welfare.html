@@ -14,7 +14,7 @@
 	<meta name="language" content="English">
 	<meta name="revisit-after" content="1 days">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonyworkshops" />
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="./style.css" />
 	<!-- Font Awesome -->
@@ -38,6 +38,13 @@
 </head>
 
 <body>
+  <style>
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color:#f5f5f51f;
+    border-radius: 10px;
+}
+  </style>
 	<div class="header sticky-top">
 		<div class="global-header">
 			<div class="back-to-home justify-content-center">
@@ -336,200 +343,97 @@
     </div>
   </div>
   <!-- webpage data start from here -->
-  <div>
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="background-color: #78335d"
-    >
-      <button
-        class="navbar-toggler text-white"
-        type="button"
-        data-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        &#9776;
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="text-center mx-auto">
-          <ul
-            class="navbar-nav text-white container"
-            id="pills"
-            role="tablist"
-          >
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white active"
-                id="pills-tab-1"
-                data-toggle="pill"
-                href="#alumni-meet"
-                role="tab"
-                aria-controls="alumni-meet"
-                aria-selected="true"
-                >Alumni Meets</a
-              >
-            </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white"
-                id="pills-tab-2"
-                data-toggle="pill"
-                href="#sclubs"
-                role="tab"
-                aria-controls="sclubs"
-                aria-selected="false"
-                >Student Clubs</a
-              >
-            </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white"
-                id="pills-tab-3"
-                data-toggle="pill"
-                href="#study-circle"
-                role="tab"
-                aria-
-                controls="study-circle"
-                aria-selected="false"
-                >Student Study Circles</a
-              >
-            </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white"
-                id="pills-tab-4"
-                data-toggle="pill"
-                href="#gbu-chapter"
-                role="tab"
-                aria-
-                controls="gbu-chapter"
-                aria-selected="false"
-                >Student GBU Chapters</a
-              >
-            </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white"
-                id="pills-tab-5"
-                data-toggle="pill"
-                href="#programming-events"
-                role="tab"
-                aria-
-                controls="programming-events"
-                aria-selected="false"
-                >Programming Events</a
-              >
-            </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white"
-                id="pills-tab-6"
-                data-toggle="pill"
-                href="#sactivities"
-                role="tab"
-                aria-
-                controls="sactivities"
-                aria-selected="false"
-                >Student Activities</a
-              >
-            </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link text-white"
-                id="pills-tab-7"
-                data-toggle="pill"
-                href="#sworkshops"
-                role="tab"
-                aria-controls="pills-contact sworkshops "
-                aria-selected="false "
-                >Student Workshops</a
-              >
-            </li>
+  <div class="">
+    <ul class="nav nav-pills mb-3 pillbg m-auto justify-content-center " id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link text-white active" id="pills-alumnim-tab" data-toggle="pill" href="#alumnim" role="tab" aria-controls="pills-home" aria-selected="true">Alumni Meets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="pills-studentclub-tab" data-toggle="pill" href="#pills-studentclub" role="tab" aria-controls="pills-studentclub" aria-selected="false">Student Clubs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="pills-studentsc-tab" data-toggle="pill" href="#pills-studentsc" role="tab" aria-controls="pills-studentsc" aria-selected="false">Student Study Circles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="pills-studentgc-tab" data-toggle="pill" href="#pills-studentgc" role="tab" aria-controls="pills-studentgc" aria-selected="false">Student GBU Chapters</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="pills-pevent-tab" data-toggle="pill" href="#pills-pevent" role="tab" aria-controls="pills-pevent" aria-selected="false">Programming Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="pills-sactivities-tab" data-toggle="pill" href="#pills-sactivities" role="tab" aria-controls="pills-sactivities" aria-selected="false">Student Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="pills-workshop-tab" data-toggle="pill" href="#pills-workshop" role="tab" aria-controls="pills-workshop" aria-selected="false">Student Workshops</a>
+      </li>
+    </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+      <!-- alumnim tab start -->
+      <div class="tab-pane fade show active" id="alumnim" role="tabpanel" aria-labelledby="pills-alumnim-tab">
+        <div class="container">
+          <h5 class="text-lg-left mt-3 mb-0">ALUMNI MEETS | USICT</h5>
+          <div
+            class="mb-3 mt-2 float-left"
+            style="height: 5px; width: 7%; background-color: #fb8c00"
+          ></div>
+          <br />
+          <br />
+          <p class="text-justify">
+            The students of Gautam Buddha University have been recruited in
+            several National and International organisations and have proved to
+            be a great asset to the organizations they joined. Our present
+            graduates and post graduate would assuredly maintain the same level
+            of performance and take their recruiting organizations to new
+            heights in their respective fields. We highly value our partnership
+            with alumni of Gautam Buddha University and remain committed to
+            provide a productive and positive experience. We heartily invite the
+            alumni organizations and graduating students to find the best match
+            between their needs and capabilities. We are available for any
+            requisite assistance & would ensure a positive & productive
+            experience. Feedback & queries would be welcome and thoroughly
+            entertained and suggestions would be appreciated.
+          </p>
+          <ul type="circle ">
+            <li></li>
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="tab-content tab-content ">
-    <div
-      class="tab-pane fade show active"
-      id="alumni-meet "
-      role="tabpanel "
-      aria-labelledby="pills-tab-1 "
-    >
-      <div class="container">
-        <h5 class="text-lg-left mt-3 mb-0">ALUMNI MEETS | USICT</h5>
-        <div
-          class="mb-3 mt-2 float-left"
-          style="height: 5px; width: 7%; background-color: #fb8c00"
-        ></div>
-        <br />
-        <br />
-        <p class="text-justify">
-          The students of Gautam Buddha University have been recruited in
-          several National and International organisations and have proved to
-          be a great asset to the organizations they joined. Our present
-          graduates and post graduate would assuredly maintain the same level
-          of performance and take their recruiting organizations to new
-          heights in their respective fields. We highly value our partnership
-          with alumni of Gautam Buddha University and remain committed to
-          provide a productive and positive experience. We heartily invite the
-          alumni organizations and graduating students to find the best match
-          between their needs and capabilities. We are available for any
-          requisite assistance & would ensure a positive & productive
-          experience. Feedback & queries would be welcome and thoroughly
-          entertained and suggestions would be appreciated.
-        </p>
-        <ul type="circle ">
-          <li></li>
-        </ul>
+   <!-- alumnim tab end -->
+   <!-- tab 2 start -->
+      <div class="tab-pane fade" id="pills-studentclub" role="tabpanel" aria-labelledby="pills-studentclub-tab">
+        <div class="container">
+          <h5 class="text-lg-left mt-3 mb-0">STUDENT CLUBS | USICT</h5>
+          <div
+            class="mb-3 mt-2 float-left"
+            style="height: 5px; width: 7%; background-color: #fb8c00"
+          ></div>
+          <br />
+          <br />
+          <ul type="circle ">
+            <li></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="sclubs "
-      role="tabpanel "
-      aria-labelledby="pills-tab-2 "
-    >
-      <div class="container">
-        <h5 class="text-lg-left mt-3 mb-0">STUDENT CLUBS | USICT</h5>
-        <div
-          class="mb-3 mt-2 float-left"
-          style="height: 5px; width: 7%; background-color: #fb8c00"
-        ></div>
-        <br />
-        <br />
-        <ul type="circle ">
-          <li></li>
-        </ul>
+      <!-- tab 2 end -->
+      <!-- tab 3 start -->
+      <div class="tab-pane fade" id="pills-studentsc" role="tabpanel" aria-labelledby="pills-studentsc-tab">
+        <div class="container">
+          <h5 class="text-lg-left mt-3 mb-0">STUDENT STUDY CIRCLES | USICT</h5>
+          <div
+            class="mb-3 mt-2 float-left"
+            style="height: 5px; width: 7%; background-color: #fb8c00"
+          ></div>
+          <br />
+          <br />
+          <ul type="circle ">
+            <li></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="study-circle "
-      role="tabpanel "
-      aria-labelledby="pills-tab-3 "
-    >
-      <div class="container">
-        <h5 class="text-lg-left mt-3 mb-0">STUDENT STUDY CIRCLES | USICT</h5>
-        <div
-          class="mb-3 mt-2 float-left"
-          style="height: 5px; width: 7%; background-color: #fb8c00"
-        ></div>
-        <br />
-        <br />
-        <ul type="circle ">
-          <li></li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="gbu-chapter "
-      role="tabpanel "
-      aria-labelledby="pills-tab-4 "
-    >
+    <!-- tab 3 end -->
+    <!-- tab 4 start -->
+    <div class="tab-pane fade" id="pills-studentgc" role="tabpanel" aria-labelledby="pills-studentgc-tab">
       <div class="container">
         <h5 class="text-lg-left mt-3 mb-0">STUDENT GBU CHAPTERS | USICT</h5>
         <div
@@ -543,239 +447,230 @@
         </ul>
       </div>
     </div>
-    <div
-      class="tab-pane fade"
-      id="programming-events "
-      role="tabpanel "
-      aria-labelledby="pills-tab-5 "
-    >
-      <div class="container">
-        <h5 class="text-lg-left mt-3 mb-0">PROGRAMMING EVENTS | USICT</h5>
-        <div
-          class="mb-3 mt-2 float-left"
-          style="height: 5px; width: 7%; background-color: #fb8c00"
-        ></div>
-        <br />
-        <br />
-        <ul type="circle ">
-          <li>
-            <p class="text-justify">
-              <b
-                >4<sup>th</sup> One Week Programming Competition and Challenge
-                War (Technovation 2020)</b
-              >, organized by the University School of Information and
-              Communication Technology, Gautam Buddha University, Greater
-              NOIDA, UP, INDIA from 24th to 29th Feb, 2020.
-            </p>
-          </li>
+  <!-- tab 4 end -->
+  <!-- tab 5 start -->
+  <div class="tab-pane fade" id="pills-pevent" role="tabpanel" aria-labelledby="pills-pevent-tab">
+    <div class="container">
+      <h5 class="text-lg-left mt-3 mb-0">PROGRAMMING EVENTS | USICT</h5>
+      <div
+        class="mb-3 mt-2 float-left"
+        style="height: 5px; width: 7%; background-color: #fb8c00"
+      ></div>
+      <br />
+      <br />
+      <ul type="circle ">
+        <li>
+          <p class="text-justify">
+            <b
+              >4<sup>th</sup> One Week Programming Competition and Challenge
+              War (Technovation 2020)</b
+            >, organized by the University School of Information and
+            Communication Technology, Gautam Buddha University, Greater
+            NOIDA, UP, INDIA from 24th to 29th Feb, 2020.
+          </p>
+        </li>
 
-          <li>
-            <p class="text-justify">
-              <b
-                >3<sup>rd</sup> One Week Software Code Competition and
-                Challenge War (SC3W) and Mobile Apps Development War</b
-              >, organized by the University School of Information and
-              Communication Technology, Gautam Buddha University, Greater
-              NOIDA, UP, INDIA from 11th to 15th Sept, 2017.
-            </p>
-          </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >3<sup>rd</sup> One Week Software Code Competition and
+              Challenge War (SC3W) and Mobile Apps Development War</b
+            >, organized by the University School of Information and
+            Communication Technology, Gautam Buddha University, Greater
+            NOIDA, UP, INDIA from 11th to 15th Sept, 2017.
+          </p>
+        </li>
 
-          <li>
-            <p class="text-justify">
-              <b
-                >2<sup>nd</sup> One Week Software Code Competition and
-                Challenge War (SC3W) and Mobile Apps Development War </b
-              >, organized by the School of Information and Communication
-              Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
-              from 7th to 12th Nov, 2016.
-            </p>
-          </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >2<sup>nd</sup> One Week Software Code Competition and
+              Challenge War (SC3W) and Mobile Apps Development War </b
+            >, organized by the School of Information and Communication
+            Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
+            from 7th to 12th Nov, 2016.
+          </p>
+        </li>
 
-          <li>
-            <p class="text-justify">
-              <b
-                >1<sup>st</sup> Code Competition and Challenge War (C3W) and
-                Mobile Apps Development War</b
-              >, organized by the School of Information and Communication
-              Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
-              from 8th to 10th Feb, 2016.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="sactivities "
-      role="tabpanel "
-      aria-labelledby="pills-tab-6 "
-    >
-      <div class="container">
-        <h5 class="text-lg-left mt-3 mb-0">STUDENT ACTIVITIES | USICT</h5>
-        <div
-          class="mb-3 mt-2 float-left"
-          style="height: 5px; width: 7%; background-color: #fb8c00"
-        ></div>
-        <br />
-        <br />
-        <ul type="circle ">
-          <li></li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="sworkshops "
-      role="tabpanel "
-      aria-labelledby="pills-tab-7 "
-    >
-      <div class="container">
-        <h5 class="text-lg-left mt-3 mb-0">STUDENT WORKSHOPS | USICT</h5>
-        <div
-          class="mb-3 mt-2 float-left"
-          style="height: 5px; width: 7%; background-color: #fb8c00"
-        ></div>
-        <br />
-        <br />
-        <ul type="circle ">
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on Machine Learning using Python</b>,
-              organized by the University School of Information and
-              Communication Technology, Gautam Buddha University, Greater
-              NOIDA, UP, in collaboration with Mapping Skills, Greater NOIDA
-              on 28th Feb, 2020.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on Python</b>, organized by the University
-              School of Information and Communication Technology, Gautam
-              Buddha University, Greater NOIDA, UP, on 22nd Feb, 2020.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on Data Science and Machine Learning</b>,
-              organized by the University School of Information and
-              Communication Technology, Gautam Buddha University, Greater
-              Noida, UP, India, in collaboration with APTRON, NOIDA on 13th
-              Feb, 2020.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on Android Technology</b> organized by the
-              University School of Information and Communication Technology,
-              Gautam Buddha University, Greater NOIDA, UP, India in
-              collaboration with DUCAT NOIDA, on 31st Jan, 2020.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on Python</b> organized by the University
-              School of Information and Communication Technology, Gautam
-              Buddha University, Greater NOIDA, UP, India in collaboration
-              with DUCAT NOIDA, on 24th Jan, 2020.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b
-                >Two Days’ Workshop on “RAMS-Reliability, Availability,
-                Maintainability and Safety”</b
-              >
-              conducted by School of Information and Communication Technology
-              and Centre of Excellence Rapid Alternative Energy and Mobility
-              (RAEM) Gautam Buddha University, Greater NOIDA, UP, India on
-              22nd - 23rd Apr, 2019.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on LaTeX</b>, jointly organized by the
-              University School of Information and Communication Technology,
-              Gautam Buddha University, Greater NOIDA, UP, INDIA and Spoken
-              Tutorial of IIT, Bombay, INDIA on 31th Aug, 2016.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One Day Workshop on Web Development through Word Press</b>,
-              organized by the University School of Information and
-              Communication Technology, Gautam Buddha University, Greater
-              NOIDA, UP, INDIA on 6th Oct, 2016.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One day Workshop on Cloud Computing</b> organized by
-              University School of Information and Communication Technology,
-              Gautam Buddha University, Greater NOIDA, UP, India in
-              collaboration with, Microsoft Gold Certified partner, IIHT,
-              Bangalore, on 30th Mar, 2016.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One day Workshop on Android Technology</b> at University
-              School of Information and Communication Technology, Gautam
-              Buddha University, Greater NOIDA, UP, India in collaboration
-              with Ducat, NOIDA, on 17th Feb,2016.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>One day Workshop on PHP</b> at University School of
-              Information and Communication Technology, Gautam Buddha
-              University, Greater NOIDA, UP, India in collaboration with
-              Ducat, NOIDA on 15th Feb, 2016.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b
-                >International Workshop for Cloud Computing and its
-                Application (IWCCA)-2013</b
-              >
-              organized by University School of Information and Communication
-              Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
-              in collaboration with SITP, DRDO, IEEE Computer Society Indian
-              Council and IEEE GBU Student Chapter, Greater NOIDA,UP, INDIA on
-              16th Feb, 2013.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>Workshop on Software Reliability and Testing</b> at
-              University School of Information and Communication Technology,
-              Gautam Buddha University, Greater NOIDA, UP, India on 2nd - 3rd
-              Sept, 2011.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b>Workshop on Wireless Communication</b>, University School of
-              Information and Communication Technology, Gautam Buddha
-              University, Greater NOIDA, UP, India, 20th Apr, 2011.
-            </p>
-          </li>
-          <li>
-            <p class="text-justify">
-              <b
-                >Four days Workshop on Database Management Technology in
-                coloboration with IBM</b
-              >, University School of Information and Communication
-              Technology, Gautam Buddha University, Greater NOIDA, UP, India,
-              20th - 23rd May, 2010.
-            </p>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <p class="text-justify">
+            <b
+              >1<sup>st</sup> Code Competition and Challenge War (C3W) and
+              Mobile Apps Development War</b
+            >, organized by the School of Information and Communication
+            Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
+            from 8th to 10th Feb, 2016.
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
-  <!-- webpage data end here -->
+  <!-- tab 5 end -->
+  <!-- tab 6 start -->
+  <div class="tab-pane fade" id="pills-sactivities" role="tabpanel" aria-labelledby="pills-sactivities-tab">
+    <div class="container">
+      <h5 class="text-lg-left mt-3 mb-0">STUDENT ACTIVITIES | USICT</h5>
+      <div
+        class="mb-3 mt-2 float-left"
+        style="height: 5px; width: 7%; background-color: #fb8c00"
+      ></div>
+      <br />
+      <br />
+      <ul type="circle ">
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <!-- tab 6 end -->
+  <!-- tab 7 start -->
+  <div class="tab-pane fade" id="pills-workshop" role="tabpanel" aria-labelledby="pills-workshop-tab">
+    <div class="container">
+      <h5 class="text-lg-left mt-3 mb-0">STUDENT WORKSHOPS | USICT</h5>
+      <div
+        class="mb-3 mt-2 float-left"
+        style="height: 5px; width: 7%; background-color: #fb8c00"
+      ></div>
+      <br />
+      <br />
+      <ul type="circle ">
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on Machine Learning using Python</b>,
+            organized by the University School of Information and
+            Communication Technology, Gautam Buddha University, Greater
+            NOIDA, UP, in collaboration with Mapping Skills, Greater NOIDA
+            on 28th Feb, 2020.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on Python</b>, organized by the University
+            School of Information and Communication Technology, Gautam
+            Buddha University, Greater NOIDA, UP, on 22nd Feb, 2020.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on Data Science and Machine Learning</b>,
+            organized by the University School of Information and
+            Communication Technology, Gautam Buddha University, Greater
+            Noida, UP, India, in collaboration with APTRON, NOIDA on 13th
+            Feb, 2020.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on Android Technology</b> organized by the
+            University School of Information and Communication Technology,
+            Gautam Buddha University, Greater NOIDA, UP, India in
+            collaboration with DUCAT NOIDA, on 31st Jan, 2020.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on Python</b> organized by the University
+            School of Information and Communication Technology, Gautam
+            Buddha University, Greater NOIDA, UP, India in collaboration
+            with DUCAT NOIDA, on 24th Jan, 2020.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >Two Days’ Workshop on “RAMS-Reliability, Availability,
+              Maintainability and Safety”</b
+            >
+            conducted by School of Information and Communication Technology
+            and Centre of Excellence Rapid Alternative Energy and Mobility
+            (RAEM) Gautam Buddha University, Greater NOIDA, UP, India on
+            22nd - 23rd Apr, 2019.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on LaTeX</b>, jointly organized by the
+            University School of Information and Communication Technology,
+            Gautam Buddha University, Greater NOIDA, UP, INDIA and Spoken
+            Tutorial of IIT, Bombay, INDIA on 31th Aug, 2016.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One Day Workshop on Web Development through Word Press</b>,
+            organized by the University School of Information and
+            Communication Technology, Gautam Buddha University, Greater
+            NOIDA, UP, INDIA on 6th Oct, 2016.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One day Workshop on Cloud Computing</b> organized by
+            University School of Information and Communication Technology,
+            Gautam Buddha University, Greater NOIDA, UP, India in
+            collaboration with, Microsoft Gold Certified partner, IIHT,
+            Bangalore, on 30th Mar, 2016.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One day Workshop on Android Technology</b> at University
+            School of Information and Communication Technology, Gautam
+            Buddha University, Greater NOIDA, UP, India in collaboration
+            with Ducat, NOIDA, on 17th Feb,2016.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>One day Workshop on PHP</b> at University School of
+            Information and Communication Technology, Gautam Buddha
+            University, Greater NOIDA, UP, India in collaboration with
+            Ducat, NOIDA on 15th Feb, 2016.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >International Workshop for Cloud Computing and its
+              Application (IWCCA)-2013</b
+            >
+            organized by University School of Information and Communication
+            Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA
+            in collaboration with SITP, DRDO, IEEE Computer Society Indian
+            Council and IEEE GBU Student Chapter, Greater NOIDA,UP, INDIA on
+            16th Feb, 2013.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>Workshop on Software Reliability and Testing</b> at
+            University School of Information and Communication Technology,
+            Gautam Buddha University, Greater NOIDA, UP, India on 2nd - 3rd
+            Sept, 2011.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b>Workshop on Wireless Communication</b>, University School of
+            Information and Communication Technology, Gautam Buddha
+            University, Greater NOIDA, UP, India, 20th Apr, 2011.
+          </p>
+        </li>
+        <li>
+          <p class="text-justify">
+            <b
+              >Four days Workshop on Database Management Technology in
+              coloboration with IBM</b
+            >, University School of Information and Communication
+            Technology, Gautam Buddha University, Greater NOIDA, UP, India,
+            20th - 23rd May, 2010.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- tab 7 end -->
+  </div>
+   <!-- webpage data end here -->
   <div class="gcse-searchresults-only"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
